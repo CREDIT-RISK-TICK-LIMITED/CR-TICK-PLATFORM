@@ -73,7 +73,11 @@ class Dbfix extends CI_Controller
                 'type' => 'blob'
             )
         ));
-
+        $this->dbfix_m->add_column('member_additional_fields', array(
+            'is_hidden' => array(
+                'type' => 'blob'
+            )
+        ));
         $this->dbfix_m->add_column('withdrawal_approval_requests', array(
             'reference_number' => array(
                 'type' => 'blob'
