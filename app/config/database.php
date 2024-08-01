@@ -81,12 +81,11 @@ if (preg_match('/(\.local)/', $_SERVER['HTTP_HOST'])) {
 	$password = '';
 }  else {
 	$active_group = 'live';
-	$host_name='54.93.184.124';
-	$username = 'root';
-	$database = 'tick';
-	$password = 'GeuwyQ3eSMRewlX';
+	$host_name='localhost';
+	$username = "websaccodemo";
+	$database = "tick_cr";
+	$password = '3HDQ5egoRHm';
 }
-
 
 $query_builder = TRUE;
 $db['local'] = array(
@@ -154,6 +153,3 @@ $db['live'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
-
-
-
